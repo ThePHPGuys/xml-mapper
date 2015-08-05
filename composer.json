@@ -1,6 +1,6 @@
 {
     "name": "thephpguys/xmlmapper",
-    "description": "Map XML to PHP objects",
+    "description": "Map XML to PHP objects ",
     "authors": [
         {
             "name": "Vadim Zotov",
