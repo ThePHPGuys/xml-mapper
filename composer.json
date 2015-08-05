@@ -1,4 +1,17 @@
 {
+    "name": "thephpguys/xmlmapper",
+    "description": "Map XML to PHP objects",
+    "authors": [
+        {
+            "name": "Vadim Zotov",
+            "email": "vadimx@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4"
+    },
     "autoload": {
         "psr-4": {
             "XMLMapper\\": "src/"
