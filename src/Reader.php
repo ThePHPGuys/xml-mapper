@@ -32,6 +32,22 @@ class Reader{
 	private $variables = [];
 
 	/**
+	 * @return string
+	 */
+	public function getPropertyNamespace()
+	{
+		return $this->propertyNamespace;
+	}
+
+	/**
+	 * @param string $propertyNamespace
+	 */
+	public function setPropertyNamespace($propertyNamespace)
+	{
+		$this->propertyNamespace = $propertyNamespace;
+	}
+
+	/**
 	 * @return PropertyAccessor
 	 */
 	public function getPropertyAccessor()
@@ -45,6 +61,7 @@ class Reader{
 	public function setPropertyAccessor(PropertyAccessor $propertyAccessor)
 	{
 		$this->propertyAccessor = $propertyAccessor;
+		return $this;
 	}
 
 	/**
@@ -61,10 +78,12 @@ class Reader{
 	public function setVariables(array $variables)
 	{
 		$this->variables = $variables;
+		return $this;
 	}
 
-	public function setVariable($name,$value){
+	public function addVariable($name,$value){
 		$this->variables[$name] = $value;
+		return $this;
 	}
 
 
@@ -82,10 +101,12 @@ class Reader{
 	public function setMap($map)
 	{
 		$this->map = $map;
+		return $this;
 	}
 
 	public function setXml($xml){
 		$this->xml = $xml;
+		return $this;
 	}
 
 
